@@ -1,0 +1,14 @@
+{% extends "lib_man_sys/base.html"%}
+
+{% block books %}
+<div class="centered">
+    <h1>All Books in the Library</h1>
+    {% for book in book_list %}
+    <div>
+        <p>{{ book.id }}. {{ book.name }} -- {{ book.author }} </p>
+    </div>
+    {% endfor %}
+
+</div>
+
+{% endblock books %}
