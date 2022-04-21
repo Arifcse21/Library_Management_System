@@ -1,0 +1,17 @@
+{% extends "lib_man_sys/base.html"%}
+{% load static%}
+{% load crispy_forms_tags %}
+
+{% block signup %}
+<div class="centered">
+    <form method="POST">
+        {% csrf_token %}
+        <legend>Join Now</legend>
+        {{ form | crispy }}
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+
+
+{% endblock signup %}
