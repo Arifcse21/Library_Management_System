@@ -3,10 +3,10 @@
 {% block index %}
 <main class="centered">
     <div>
-        <a href="">Admin Login</a>
+        <a href="{% url 'login'%}">Admin Login</a>
     </div>
     <div>
-        <a href="">See Books as a student</a>
+        <a href="{% url 'student' %}">See Books as a student</a>
     </div>
 </main>
 {% endblock index %}

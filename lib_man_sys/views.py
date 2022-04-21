@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views.generic.list import ListView
 from django.views.generic import TemplateView
 from .models import Book, User
-from .forms import UserRegForm
+from .forms import UserRegForm, LoginForm
 from django.urls import reverse_lazy
 from django.views.generic.edit import CreateView
 
@@ -22,4 +22,3 @@ class SignupView(CreateView):
     # success_url = reverse_lazy('login')
     template_name = 'lib_man_sys/signup.html'
 
-# class LoginView(CreateView):

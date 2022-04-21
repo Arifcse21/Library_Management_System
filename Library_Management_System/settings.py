@@ -134,3 +134,4 @@ STATICFILES_DIRS = [STATIC_DIR,]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_TEMPLATE_PACK = 'uni_form'
+LOGIN_REDIRECT_URL = 'home'
